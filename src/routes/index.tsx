@@ -9,7 +9,7 @@ import { Projects } from "@/components/portfolio/Projects";
 import { Education } from "@/components/portfolio/Education";
 import { Contact, Footer } from "@/components/portfolio/Contact";
 
-const title = "Nitin Paswan — Full-Stack Developer | AI & Data-Driven Web Apps";
+const title = "Nitin Priyadarshi — Full-Stack Developer | AI & Data-Driven Web Apps";
 const description =
   "Full-Stack Developer building scalable web apps, GIS data visualization platforms, and AI-powered tools with Next.js, React, Python and PostgreSQL.";
 
