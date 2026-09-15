@@ -50,7 +50,7 @@ export function Footer() {
   return (
     <footer className="border-t border-border py-8">
       <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-3 px-5 text-sm text-muted-foreground sm:px-8">
-        <p>© {new Date().getFullYear()} Nitin Paswan. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Nitin Priyadarshi. All rights reserved.</p>
         <a href="#top" className="transition-colors hover:text-foreground">
           Back to top
         </a>
