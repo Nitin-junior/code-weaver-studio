@@ -6,10 +6,10 @@ export function About() {
       <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
         <Reveal>
           <p className="text-lg leading-relaxed text-muted-foreground">
-            Full-Stack Developer with experience building and deploying web applications, data
-            visualization platforms, and AI-enabled tools. Experienced with Next.js, React,
-            JavaScript/TypeScript, Python, PostgreSQL, MongoDB, and REST APIs, with professional
-            experience managing IT systems and developing digital solutions for an NGO.
+            Development and Technology Professional working at the intersection of technology, data,
+            and community development. Experienced in managing development projects, coordinating
+            teams and stakeholders, conducting data-driven assessments, and developing digital
+            solutions for education, skills, and social development initiatives.
           </p>
         </Reveal>
         <Reveal delay={120}>
