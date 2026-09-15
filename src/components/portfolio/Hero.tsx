@@ -15,7 +15,7 @@ export function Hero() {
 
         <Reveal delay={80}>
           <h1 className="mt-6 text-4xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl">
-            Nitin Paswan
+            Nitin Priyadarshi
           </h1>
         </Reveal>
 
