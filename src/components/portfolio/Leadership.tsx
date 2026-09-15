@@ -1,20 +1,28 @@
 import { Reveal, Section } from "./Reveal";
-import { Users, MapPin, Bike, TrendingUp, DollarSign, ClipboardList } from "lucide-react";
+import { Users, MapPin, TrendingUp, DollarSign, ClipboardList, Package, BookOpen, Droplets, Heart, Armchair, Bike } from "lucide-react";
 
-const highlights = [
+const impact = [
   { icon: DollarSign, label: "Project budget", value: "$33K" },
   { icon: ClipboardList, label: "Household surveys", value: "440" },
   { icon: MapPin, label: "Wards covered", value: "6" },
   { icon: Users, label: "Team led", value: "13" },
-  { icon: Bike, label: "Bicycles distributed", value: "81" },
   { icon: TrendingUp, label: "Attendance uplift", value: "75% → 85%" },
+];
+
+const distributed = [
+  { icon: Package, label: "School bags", detail: "Distributed to students" },
+  { icon: BookOpen, label: "Notebooks & learning materials", detail: "Core study supplies" },
+  { icon: Droplets, label: "Hygiene kits", detail: "Personal hygiene supplies" },
+  { icon: Heart, label: "Girls’ health kits", detail: "Additional kits for girls in grades 7–10" },
+  { icon: Armchair, label: "Benches / desks", detail: "100 sets provided" },
+  { icon: Bike, label: "Bicycles", detail: "80 total — 45 girls, 35 boys" },
 ];
 
 const responsibilities = [
   "Led implementation of a $33K education project focused on improving attendance among economically disadvantaged students.",
   "Coordinated collection and analysis of 440 household surveys across 6 wards, using attendance, economic conditions, disability, and distance-to-school data to inform beneficiary selection.",
   "Managed a team of 5 staff and 8 volunteers and coordinated with schools, local authorities, communities, and development partners.",
-  "Delivered targeted education and mobility support, including 81 bicycles and school learning materials.",
+  "Delivered targeted education and mobility support, including school bags, learning materials, hygiene kits, girls’ health kits, 100 bench/desk sets, and 80 bicycles.",
   "Contributed to an increase in school attendance from 75% to 85%, with follow-up monitoring confirming sustained improvement.",
 ];
 
@@ -40,8 +48,8 @@ export function Leadership() {
               MDNF × Latter-Day Saint Charities (LDSC) | WE24NPL0010
             </p>
 
-            <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-              {highlights.map((h) => (
+            <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+              {impact.map((h) => (
                 <div
                   key={h.label}
                   className="rounded-xl border border-border bg-background/50 p-4 text-center transition-colors hover:border-primary/30"
@@ -51,6 +59,28 @@ export function Leadership() {
                   <p className="mt-0.5 text-xs text-muted-foreground">{h.label}</p>
                 </div>
               ))}
+            </div>
+
+            <div className="mt-8">
+              <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-foreground">
+                Materials & support distributed
+              </h4>
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {distributed.map((d) => (
+                  <div
+                    key={d.label}
+                    className="flex items-start gap-3 rounded-xl border border-border bg-background/50 p-4 transition-colors hover:border-primary/30"
+                  >
+                    <div className="rounded-lg border border-border bg-background p-2">
+                      <d.icon className="size-5 text-primary" />
+                    </div>
+                    <div>
+                      <p className="font-medium text-foreground">{d.label}</p>
+                      <p className="text-xs text-muted-foreground">{d.detail}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
 
             <ul className="mt-8 space-y-3">
